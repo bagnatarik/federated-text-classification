@@ -58,4 +58,4 @@ def parse_to_csv(dataframe: pd.DataFrame, csv_name: str, path: str) -> None:
     """
 
     dataframe.to_csv(f"{path}\\{csv_name}", index=False)
-    return print(f"Dataset parsed to {path}\\{csv_name}.")
+    return print(f"Dataset parsed to {path}\\{csv_name}.", end="\n\n")
